@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Noelia Suárez</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1>Mª NOELIA SUÁREZ FUENTES</h1>
+        <nav>
+            <ul>
+                <li><a href="#informacion-personal">Sobre mí</a></li>
+                <li><a href="#estudios">Estudios</a></li>
+                <li><a href="#tecnologias-herramientas">Tecnologías y Herramientas</a></li>
+                <li><a href="#experiencia-laboral">Experiencia Laboral</a></li>
+                <li><a href="#skills">Otros datos de interés</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="navbar-links">
+            <a href="https://www.linkedin.com/in/noeliasuarezfuentes" target="_blank">
+                <img src="recursos/linkedin-oscuro.png" alt="LinkedIn" class="navbar-icon">
+            </a>
+            <a href="https://github.com/noeliasqet" target="_blank">
+                <img src="recursos/github-oscuro.png" alt="GitHub" class="navbar-icon">
+            </a>
+            <button class="tooltip">
+                <img src="recursos/phone-oscuro.png" alt="Teléfono" class="navbar-icon">
+                <span class="tooltip-text">+34 647 10 80 24</span>
+            </button>
+            <button class="tooltip">
+                <img src="recursos/mail-oscuro.png" alt="Mail" class="navbar-icon">
+                <span class="tooltip-text">noeliasuarezfuentes@gmail.com</span>
+            </button>
+            <button id="toggle-theme">
+                <img src="recursos/modo-oscuro.png" alt="Modo oscuro" class="navbar-icon" id="theme-icon">
+            </button>
+            <button id="toggle-lang" onclick="window.location.href='index-en.html'">
+                <img src="recursos/ingles-oscuro.png" alt="Inglés" class="navbar-icon">
+            </button>
+        </div>
+    </nav>
+    <main>
+        <section id="informacion-personal">
+            <img src="recursos/foto-perfil.jpg" alt="Foto - Noelia Suárez" class="foto-perfil">
+            <h1>SOBRE MÍ</h1>
+            <div class="glass-box">
+                <p>Me considero polifacética y siempre en busca de nuevos conocimientos. Tengo especial interés en el ámbito del desarrollo web, tanto front-end como back-end. 
+                   Mi curiosidad me ha llevado a explorar diversos ámbitos y a integrarme en equipos muy variados, lo cual ha potenciado mis capacidades de adaptación, aprendizaje ágil y manejo de conflictos.
+                   La organización es la base de mi forma de trabajar, por lo que me he interesado y adquirido conocimientos en comunicación y metodologías ágiles.
+                   <br><br>
+                   ¿Tienes alguna duda? Puedes comunicarte conmigo en del apartado de Contacto o a través de mi correo o número de teléfono.
+                </p>
+            </div>
+        </section>
+
+        <section id="tecnologias-herramientas">
+            <h1>TECNOLOGÍAS</h1>
+            <div class="grid">
+                <div class="glass-box">Java</div>
+                <div class="glass-box">Python</div>
+                <div class="glass-box">HTML</div>
+                <div class="glass-box">CSS</div>
+                <div class="glass-box">JavaScript</div>
+                <div class="glass-box">SQL</div>
+                <div class="glass-box">Git</div>
+                <div class="glass-box">Docker</div>
+                <div class="glass-box">Shell</div>
+            </div>
+            <h1>HERRAMIENTAS</h1>
+            <div class="grid">
+                <div class="glass-box">GitHub</div>
+                <div class="glass-box">VSCode</div>
+                <div class="glass-box">Eclipse</div>
+                <div class="glass-box">IntelliJ</div>
+                <div class="glass-box">Figma</div>
+                <div class="glass-box">AWS</div>
+                <div class="glass-box">Angular</div>
+                <div class="glass-box">Miro</div>
+                <div class="glass-box">Trello</div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h1>SOFT SKILLS Y DATOS DE INTERÉS</h1>
+            <div class="glass-box">Aprendizaje ágil, resolución de problemas, adaptabilidad, manejo eficaz de conflictos, comunicación asertiva, capacidad de respuesta, planificación y organización </div>
+            <div class="glass-box">Certificado de inglés B2 FIRST por Cambridge.</div>
+            <div class="glass-box">Carnet de conducir y disponibilidad de desplazamiento.</div>
+
+        </section>
+        <section id="estudios">
+            <h1>ESTUDIOS</h1>
+            <div class= "glass-box" id="estudios-item">
+                <div>
+                    <h3>TÉCNICO SUPERIOR DE DISEÑO DE APLICACIONES WEB</h3>
+                    <h4>IES Hermanos Machado</h4>
+                    <p>2023 - Actualidad</p>
+                </div>
+            </div>
+            <div class= "glass-box" id="estudios-item">
+                <div>
+                    <h3>GRADO EN PSICOLOGÍA</h3>
+                    <h4>Universidad Nacional de Educación a Distancia</h4>
+                    <p>2020 - 2023</p>
+                </div>
+            </div>
+            <div class="separador"></div>
+            <h1>OTRAS FORMACIONES</h1>
+            <div class= "glass-box" id="estudios-item">
+                <div>
+                    <h3>MÁSTER EN PROGRAMACIÓN</h3>
+                    <h4> Projects Computers Courses</h4>
+                    <p>Máster privado de 1 año - modalidad presencial.</p> 
+                    <p>HTML5, CSS, Java, Python</p>
+                </div>
+            </div>
+            <div class= "glass-box" id="estudios-item">
+                <div>
+                    <h3>ANÁLISIS Y PROGRAMACIÓN EN JAVA</h3>
+                    <h4>ADAMS Formación</h4>
+                    <p>Curso de 140h - modalidad mixta.</p>
+                    <p>Sintaxis del lenguaje, utilización de librerías, programación orientada a objetos, aplicaciones basadas en entorno gráfico, 
+                        acceso a datos, arquitectura JAVA EE, desarrollo de aplicaciones web con Servlets y JSP, arquitectura MVC.</p>
+                </div>
+            </div>
+            <div class= "glass-box" id="estudios-item">
+                <div>
+                    <h3>GIT</h3>
+                    <h4>OpenWebinars</h4>
+                    <p>Curso de 7h - modalidad online.</p>
+                    <p>Herramientas, organización de código fuente, flujos de trabajo y trabajo colaborativo (etiquetas, releases, inssues, pull request e integración continua).</p>
+                </div>
+            </div>
+            <div class= "glass-box" id="estudios-item">
+                <div>
+                    <h3>FUNDAMENTOS DE ANGULAR</h3>
+                    <h4>OpenWebinars</h4>
+                    <p>Curso de 7h - modalidad online.</p>
+                    <p>Entorno de desarrollo, componentes, templates, Data Binding, pipes, directives, módulos, rutas y providers</p>
+                </div>
+            </div>
+            <div class= "glass-box" id="estudios-item">
+                <div>
+                    <h3>PYTHON DESDE CERO</h3>
+                    <h4>OpenWebinars</h4>
+                    <p>Curso de 7h - modalidad online.</p>
+                    <p>Introducción a Python 3, tipos de datos básicos, estructuras de control, tipos de datos en secuencias y mapas, excepciones, módulos, producción estructurada y programación orientada a objetos</p>
+                </div>
+            </div>
+            <div class= "glass-box" id="estudios-item">
+                <div>
+                    <h3>DOCKER</h3>
+                    <h4>OpenWebinars</h4>
+                    <p>Curso de 7h - online.</p>
+                    <p>Introducción a Docker, ejecución de contenedores, gestión de imágenes, almacenamiento, redes, creación de escenarios multicontenedor (Docker Compose) y Docker Desktop</p>
+                </div>
+            </div>
+            <div class= "glass-box" id="estudios-item">
+                <div>
+                    <h3>HABILIDADES SOCIALES</h3>
+                    <h4>Asociación Española de Psicología Sanitaria (AEPSIS)</h4>
+                    <p>Curso de 20h - modalidad online.</p>
+                    <p>Tipos de habilidades sociales, desarrollo de la empatía, desarrollo de comportamientos asertivos, escucha activa, inteligencia emocional, conocimiento del papel de las credenciales,
+                        diferentes puntos de una conversación, hacer peticiones, resolución de conflicto interpersonales, realizar críticas de forma eficaz y HS en niños.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="experiencia-laboral">
+            <h1>EXPERIENCIA LABORAL</h1>
+
+            <div class= "experiencia-laboral" id="experiencia-item">
+                <div>
+                    <h2>COMMUNITY MANAGER</h2>
+                    <h4>FREELANCE - Usuarios y pequeñas empresas</h4>
+                    <p>2020 - 2021</p>
+                </div>
+                <div>
+                    <p>Gestión y creación de contenido para redes sociales en diversas plataformas, análisis de marca personal y seguimiento en línea y creación de estrategias de marketing para mejorar la presencia digital</p>
+                </div>
+            </div>
+            
+            <div class= "experiencia-laboral" id="experiencia-item">
+                <div>
+                    <h2>PROMOTOR DE VENTAS / COMERCIAL</h2>
+                    <h4>SECURITAS DIRECT</h4>
+                    <p>2018-2020</p>
+                </div>
+                <div>
+                    <p>Telemarketing y visitas presenciales para la presentación de producto, asistencia en la instalación de equipos de seguridad y formación de nuevos empleados en Sevilla y Madrid.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contacto">
+            <div class="glass-box">
+                <h1>CONTACTO</h1>
+                <form>
+                    <input type="text" placeholder="Nombre" required>
+                    <input type="text" placeholder="Empresa (Opcional)">
+                    <textarea placeholder="Mensaje" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

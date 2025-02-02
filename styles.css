@@ -1,0 +1,354 @@
+/****************? CARGAR FUENTES EXTERNAS ***************/
+
+/*Desde https://fonts.google.com/selection/embed (ya te da el código de descarga con link o @import)*/
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+
+
+.lexend {
+    font-family: "Lexend", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.lexend-bold {
+    font-family: "Lexend", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.lexend-light {
+    font-family: "Lexend", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.lexend-thin {
+    font-family: "Lexend", serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+
+/****************? MODO OSCURO ***************/
+
+.modo-oscuro {
+    background: #000322;
+    color: #ffffff;
+}
+
+.modo-oscuro main {
+    background: url('https://images.unsplash.com/photo-1595364397663-fca4f075d796?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center fixed;
+    background-size: cover;
+    backdrop-filter: blur(10px);
+}
+
+.modo-oscuro .navbar {
+    background: rgba(0, 0, 0, 0.2);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+}
+
+
+body {
+    font-family: 'Lexend', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background: #accddc;
+    color: #000000;
+    transition: background 0.3s, color 0.3s;
+}
+
+
+/****************? NAVBAR ***************/
+
+.navbar {
+    position: fixed;
+    width: 250px;
+    height: 100vh;
+    background: #accddc;
+    backdrop-filter: blur(20px); 
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease-in-out;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 15px 0;
+}
+
+nav ul li a {
+    font-family: 'Lexend-bold', sans-serif;
+    text-decoration: none;
+    color: inherit;
+    font-size: 18px;
+    cursor: pointer; 
+}
+
+.navbar-links {
+    position:absolute;
+    bottom: 60px;
+    padding: 20px;
+    margin-top: auto;
+    text-align: center;
+}
+
+.navbar-links a {                       /* Para que no se vea el subrayado de los enlaces al lado del icono */
+    text-decoration: none;
+}
+
+.navbar-icon {
+    width: 24px; 
+    height: 24px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.navbar-icon:hover {
+    transform: scale(1.1);
+}
+
+
+
+/****************? MAIN ***************/
+
+main {
+    margin-left: 290px;
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url('https://images.unsplash.com/photo-1596468138838-0f34c2d0773b?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    transition: background 0.3s;
+    position: relative;
+}
+
+
+/****************? EFECTO CRISTAL - Divs ***************/
+
+.glass-box {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px 15px;
+    margin: 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+section {
+    display: none;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+
+
+section.active {
+    display: block;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+
+/****************? FOTO DE PERFIL ***************/
+
+.foto-perfil {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 20px;
+    border: 4px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/****************? TECNOLOGÍAS Y HERRAMIENTAS ***************/
+
+#tecnologias-herramientas {
+    text-align: center;
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;                        /* Pasa a la siguiente líne si no cabe en pantalla */
+    justify-content: center;
+    gap: 10px;                              /* Espacio entre elementos */
+    padding: 10px;
+}
+
+#tecnologias-herramientas .glass-box {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px 15px;
+    margin: 0px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 120px;
+    min-height: 50px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+#tecnologias-herramientas .glass-box:hover {
+    transform: scale(1.05);
+}
+
+/****************? SEPARADOR ***************/
+
+.separador{
+    padding: 20px;
+}
+
+
+/****************? EXPERIENCIA LABORAL ***************/
+
+.experiencia-laboral {
+    background: rgba(255, 255, 255, 0.1);           /* Fondo semitransparente */
+    backdrop-filter: blur(10px);                      /* Efecto borroso */
+    border-radius: 20px;                              /* Bordes redondeados */
+    padding: 20px;
+    max-width: 800px;
+    margin: 50px auto;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);      /* Sombra */
+}
+
+.experiencia-item {
+    background: rgba(255, 255, 255, 0.1);           /* Fondo semi-transparente */
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    padding: 15px;
+    margin: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.experiencia-item h2, .experiencia-item h4 {
+    margin: 0;
+}
+
+.experiencia-item p {
+    font-family: 'Lexend-thin', sans-serif;
+}
+
+
+/****************? CONTACTO ***************/
+
+#contacto .glass-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5%;
+}
+
+#contacto h1 {
+    margin-bottom: 5%;
+}
+
+#contacto form {
+    padding: 3%;
+    padding-right: 5%;
+    border: none;
+    font-size: 16px;
+}
+
+#contacto input, textarea {
+    width: 100%;
+    border: none;
+}
+
+#contacto textarea {
+    resize: vertical;
+}
+
+#contacto button {
+    width: 35%;
+    background-color: #2DADCa;
+    color: beige;
+    border: none;
+}
+
+#contacto button:hover {
+    transform: scale(1.05);
+}
+
+.tooltip {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.tooltip-text {
+    visibility: hidden;
+    background: rgba(255, 255, 255, 0.15);
+    color: #00061A;
+    padding: 5px;
+    position: absolute;
+    bottom: 150%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/****************? CAMBIO MODOS/IDIOMA - Para JS ***************/
+
+#toggle-theme, #toggle-lang {
+    background: rgba(255, 255, 255, 0.15);
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 50%;
+    margin-top: 10px;
+}
