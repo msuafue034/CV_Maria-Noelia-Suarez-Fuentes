@@ -78,6 +78,7 @@ body {
     align-items: center;
     box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1);
     transition: background 0.3s ease-in-out;
+    z-index: 1000;
 }
 
 nav ul {
@@ -90,7 +91,7 @@ nav ul li {
 }
 
 nav ul li a {
-    font-family: 'Lexend-bold', sans-serif;
+    font-family: 'Lexend', sans-serif;
     text-decoration: none;
     color: inherit;
     font-size: 18px;

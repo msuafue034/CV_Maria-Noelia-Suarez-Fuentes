@@ -38,3 +38,11 @@ toggleTheme.addEventListener("click", () => {
         }
     });
 });
+
+function copiarAlPortapapeles(texto) {
+    navigator.clipboard.writeText(texto).then(() => {
+        alert("Texto copiado al portapapeles: " + texto);
+    }).catch(err => {
+        alert("Error al copiar al portapapeles: " + err);
+    });
+}
